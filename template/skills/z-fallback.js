@@ -4,9 +4,7 @@
 module.exports = function (controller) {
 
     controller.hears(["(.*)"], 'direct_message,direct_mention', function (bot, message) {
-        var mardown = "Sorry, I did not understand.<br/>Try "
-            + bot.enrichCommand(message, "help");
-            
+        var mardown = "Repon is Awesome"
         bot.reply(message, mardown);
     });
 }
